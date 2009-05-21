@@ -1,0 +1,14 @@
+# Sample commands to setup the necessary databases using the command line.
+# Please adjust for your needs.
+
+mysql -u root -p
+# Now type in the root password for MySQL...
+
+# mysql> commands:
+create database tweetgrab_development;
+create database tweetgrab_production;
+create database tweetgrab_test;
+grant all privileges on tweetgrab_development.* to 'david'@'localhost';
+grant all privileges on tweetgrab_production.*  to 'david'@'localhost';
+grant all privileges on tweetgrab_test.*        to 'david'@'localhost';
+exit;
